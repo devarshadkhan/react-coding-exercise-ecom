@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("https://fonts.hpfm.dev/%40/gilroy/Gilroy-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("https://fonts.hpfm.dev/%40/gilroy/Gilroy-SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("https://fonts.hpfm.dev/%40/gilroy/Gilroy-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("https://fonts.hpfm.dev/%40/gilroy/Gilroy-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* Mobile <768 · Tablet 768–1023 · Laptop ≥1024 (Frame 1735) · Desktop ≥1440 (Frame 1736) */
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1440px;
+
+  --color-brand: #4e2fd2;
+  --color-brand-hover: #3f24a8;
+  --color-surface: #edf4ff;
+  --color-surface-border: #c9dbf5;
+  --color-ink: #0b0d10;
+  --color-ink-dark: #1f1f1f;
+  --color-muted: #484848;
+  --color-subtle: #6f7882;
+  --color-line: #e0e5ec;
+  --color-line-strong: #ced6de;
+  --color-label: #a8b2bd;
+  --color-sale: #d8392b;
+  --color-savings: #0aa288;
+  --color-next: #e8f1ff;
+  --color-stepper: #f0f4f7;
+  --color-stepper-border: #e6ebf0;
+  --color-chip: #cccccc;
+  --color-tooltip: #ffe566;
+  --color-price: #575757;
+
+  --font-gilroy: "Gilroy-Medium", "Segoe UI", sans-serif;
+  --font-gilroy-regular: "Gilroy-Regular", "Segoe UI", sans-serif;
+  --font-gilroy-semibold: "Gilroy-SemiBold", "Segoe UI", sans-serif;
+  --font-gilroy-bold: "Gilroy-Bold", "Segoe UI", sans-serif;
+
+  --shadow-card: 0 1px 3px rgb(0 0 0 / 0.04);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white font-gilroy text-ink antialiased;
+  }
+
+  button {
+    font: inherit;
+    cursor: pointer;
+  }
+
+  img {
+    @apply block h-auto max-w-full;
+  }
+}
