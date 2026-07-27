@@ -1,4 +1,4 @@
-# Security System Builder
+# Ecom Test
 
 Pixel-faithful Next.js implementation of the [Frontend-Test-Figma](https://www.figma.com/design/JYf61etQVqeseX7oY5alGz/Frontend-Test-Figma?node-id=68-8088) multi-step security system configurator.
 
